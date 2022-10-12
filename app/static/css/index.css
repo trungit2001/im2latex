@@ -1,0 +1,47 @@
+html {
+    color: black;
+    display: table;
+    font-family: 'Dancing Script', cursive;
+    height: 100%;
+    text-align: center;
+    width: 100%;
+}
+
+.title {
+    text-align: center;
+    font-size: 3em;
+    font-weight: 400;
+}
+
+.btn {
+    background-color: #4CAF50;
+    border-radius: 10px;
+    border-color: #4CAF50;
+    color: white;
+    padding: 7px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 700;
+    margin: 20px;
+}
+
+img.bg {
+    width: 40%;
+    height: 40%;
+    display: block;
+    margin: 0 auto;
+}
+
+input[type=file]::file-selector-button {
+    border: none;
+    background: #cfcfcffa;
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: #000000fa;
+}
+
+input[type=file]::file-selector-button:hover {
+    background: #bbbbbbfa;
+  }

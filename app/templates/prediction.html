@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" , src="{{ url_for('static', filename='js/utils.js') }}"></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
+    <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='images/favicon.ico') }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <title>Prediction</title>
+</head>
+
+<body>
+    <h1 class="title">Predicted results</h1>
+    <img class="center" style="width: 15%; height: 15%; display: inline-block; margin: 0 auto;" src="{{ img_src }}" alt="">
+    <p style="text-align: center; font-size: 20px; font-family: sans-serif;">Latex code: {{ label }}</p>
+    <button class="btn" onclick="changePage('../upload')">Again?</button><br />
+    <button class="btn" onclick="changePage('../')">Home page</button>
+</body>
+
+</html>

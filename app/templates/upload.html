@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
+    <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='images/favicon.ico') }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <title>Upload file</title>
+</head>
+
+<body>
+    <h1 class="title">Choose an image to predict</h1>
+    <img class="bg" src="../static/images/bg.png" alt="background">
+    <form action="{{ upload_url }}" method=post enctype=multipart/form-data>
+        <input class="btn" type=file accept="image/*" name=file><br />
+        <input class="btn" type=submit value=Upload>
+    </form>
+</body>
+
+</html>
